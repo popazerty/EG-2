@@ -1,5 +1,5 @@
 DESCRIPTION = "Enigma2 is an experimental, but useful framebuffer-based frontend for DVB functions"
-MAINTAINER = "OpenVix"
+MAINTAINER = "Egami"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=751419260aa954499f7abaabaa882bbe"
 
@@ -19,20 +19,6 @@ PACKAGES += "${PN}-meta"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 inherit autotools pkgconfig pythonnative
-
-ACLOCALDIR = "${B}/aclocal-copy"
-e2_copy_aclocal () {
-        rm -rf ${ACLOCALDIR}/
-        mkdir -p ${ACLOCALDIR}/
-        if [ -d ${STAGING_DATADIR_NATIVE}/aclocal ]; then
-                cp-noerror ${STAGING_DATADIR_NATIVE}/aclocal/ ${ACLOCALDIR}/
-        fi
-        if [ -d ${STAGING_DATADIR}/aclocal -a "${STAGING_DATADIR_NATIVE}/aclocal" != "${STAGING_DATADIR}/aclocal" ]; then
-                cp-noerror ${STAGING_DATADIR}/aclocal/ ${ACLOCALDIR}/
-        fi
-}
-
-EXTRACONFFUNCS += "e2_copy_aclocal"
 
 ACLOCALDIR = "${B}/aclocal-copy"
 e2_copy_aclocal () {
