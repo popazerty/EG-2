@@ -357,11 +357,6 @@ lib/python/Components/Sources/Makefile
 lib/python/Screens/Makefile
 lib/python/Plugins/Makefile
 lib/python/Plugins/Extensions/Makefile
-lib/python/Plugins/Extensions/EGAMIFaq/Makefile
-lib/python/Plugins/Extensions/EGAMIFaq/skins/Makefile
-lib/python/Plugins/Extensions/EGAMINews/Makefile
-lib/python/Plugins/Extensions/EGAMINews/images/Makefile
-lib/python/Plugins/Extensions/EGAMIPermanentClock/Makefile
 lib/python/Plugins/Extensions/CutListEditor/Makefile
 lib/python/Plugins/Extensions/CutListEditor/meta/Makefile
 lib/python/Plugins/Extensions/DVDBurn/Makefile
